@@ -1,0 +1,12 @@
+{{ form_start(form) }}
+
+
+   <div >
+   <div style="padding:10px" >  {{ form_row(form.text) }}</div>
+   <div style="padding:10px">  {{ form_row(form.User) }}</div>
+     
+  
+    <button style="width:5%;margin-left:10px;margin-top:20px" class="btn btn-primary">{{ button_label|default('Save') }}</button>
+    <a style="width:10%; height: 13%;margin-left:10px;margin-top:20px;size:10px"class="btn btn-dark" href="{{ path('problem_index') }}">back to list</a>
+   </div>
+{{ form_end(form) }}
